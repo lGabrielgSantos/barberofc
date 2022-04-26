@@ -3,8 +3,17 @@ import styled from "styled-components";
 
 export const Container = styled.div ` 
     margin-top: 4rem;
-
-    div {
+    .scroll {
+        height: 30rem;
+        max-height: 10%;
+        width: 100%;
+        overflow-y: auto;
+       
+        flex-wrap: nowrap;
+        padding: 10px 10px 5px 10px;
+        border-radius: 3px;
+        }
+    .buttons {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         background: var(--shape);
@@ -13,9 +22,14 @@ export const Container = styled.div `
         color: var(--text-title);
         width: 100%;
 
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
             grid-template-columns: repeat(3, 1fr);
-            
+
+        }   
+        
+        @media (max-width: 400px) {
+            grid-template-columns: repeat(2, 1fr);
+
         }   
     }
     button {
@@ -54,6 +68,7 @@ export const Container = styled.div `
                 padding: 1rem 0.4rem !important;
             }
         }
+
 
         td {
          

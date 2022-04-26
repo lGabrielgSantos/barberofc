@@ -33,7 +33,7 @@ export function TableValues() {
             <button onClick={() => setFilterStateMenu(!filterStateMenu)}>{filterStateMenu ? 'Close' : 'Filter'}</button>
             <button onClick={() => setFilterState(false)}>Clear</button>
             {filterStateMenu ?  
-            <div>
+            <div className="buttons">
             <button onClick={() => handleclickFilter('0', '1')}>Janeiro</button>
             <button onClick={() => handleclickFilter('0', '2')}>Fevereiro</button>
             <button onClick={() => handleclickFilter('0', '3')}>Março</button>
@@ -47,6 +47,7 @@ export function TableValues() {
             <button onClick={() => handleclickFilter('1', '1')}>Novembro</button>
             <button onClick={() => handleclickFilter('1', '2')}>Dezembro</button>
             </div> : null}
+            <div className="scroll">
             <table>
                 <thead>
                     <tr>
@@ -70,6 +71,7 @@ export function TableValues() {
                      }
                 </tbody>
             </table>
+            </div>
         </Container>
     )
 }
