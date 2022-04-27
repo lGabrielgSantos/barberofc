@@ -77,6 +77,21 @@ export const GlobalStyles = createGlobalStyle `
         padding: 3rem;
         position: relative;
         border-radius: 0.24rem;
+        animation: open 0.5s ease-in forwards;
+
+
+    }
+
+    @keyframes open {
+        from {
+            opacity: 0;
+            bottom: -30px;
+
+        }
+        to {
+            opacity: 1;
+            bottom: 0px;
+        }
     }
 
     .react-modal-close {

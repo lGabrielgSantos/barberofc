@@ -35,6 +35,7 @@ export function NewSchedulingModal({isOpen, onRequestClose}: NewSchedulingModal)
     return (
         <Modal 
         isOpen={isOpen} 
+        ariaHideApp={false}
         onRequestClose={onRequestClose}
         overlayClassName="react-modal-overlay"
         className="react-modal-content"

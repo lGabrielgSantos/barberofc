@@ -79,8 +79,14 @@ export const Container = styled.div `
             border-radius: 0.25rem;
             
             img {
+                margin-top: 0.8rem;
                 width: 20px;
                 height: 20px;
+
+                @media (max-width: 600px) {
+                    margin-top: 10px;
+
+        }  
             }
 
 
